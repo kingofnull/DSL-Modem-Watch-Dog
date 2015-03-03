@@ -72,3 +72,7 @@ INTERNET_CHECK_TIME_OUT=2
 INTERNET_CHECK_INTERVAL=10
 BACK_ALIVE_RETRY_MAX=60
 ```
+<br />
+<br />
+##Compile
+You Need Pyinstaller For Complie Script. In Windows Just Run Build build_binalry.bat
