@@ -56,7 +56,6 @@ Specify Maximum Number Of Retry After Reset Line.
 
 
 ###Default Configuration As Sample:
-`
 [MODEM]
 MODEM_ADDRESS = "192.168.1.1"
 MODEM_USER=""
@@ -74,4 +73,4 @@ INTERNET_CHECK_TCP_PORT=80
 INTERNET_CHECK_TIME_OUT=2
 INTERNET_CHECK_INTERVAL=10
 BACK_ALIVE_RETRY_MAX=60
-`
+  
