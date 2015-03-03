@@ -1,9 +1,9 @@
 ##What Is It?
-Its Python Script Which Observes Internet Connectivity And Reset DSL Line When Internet Is Not Available.
+Its A Python Script Which Observes Internet Connectivity And Reset DSL Line When Internet Is Not Available.
 <br />
 ##Why
-DSL Modem Has Kind Of Problem Which They Can't Dial The User/Password On The Line (At Least Mine Does). The Only Way To Problem Is Reset The DSL Line Connection Or Mainly Reset The DSL Modem.
-This Script Check The Internet Connection In A Loop And If It Internet Connection Is No Available Connect To The Modem And Run Two Commands To Reset The Line. 
+DSL Modem Has Kind Of Problem Which They Some Times Can't Dial The User/Password On The Line (At Least Mine Does) This Problems Made By ISP. The Only Way To Solve It Is Reseting The DSL Line Connection Or Mainly Reset The DSL Modem.
+This Script Check The Internet Connection In A Loop And If Internet Connection Is Not Available It Connect To The Modem And Run Two Commands To Reset The DSL Line. 
 <br /><br />
 All Options Are Configurable And Should Be Set In `config.ini`. The Python Script And Win32 Binary Are Available.
 <br /><br />
@@ -52,7 +52,7 @@ Specify Normal Internet Check Internal In Seconds.
 ######BACK_ALIVE_RETRY_MAX
 Specify Maximum Number Of Retry After Reset Line.
 <br /><br />
-#####Default Configuration As Sample:
+#####Default Configuration As A Sample:
 ```
 [MODEM]
 MODEM_ADDRESS = "192.168.1.1"
