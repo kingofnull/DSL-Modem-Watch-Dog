@@ -23,19 +23,19 @@ Specify The Code That Modem Will Send To Get User Name. By Default It's Not Need
 ####MODEM_PASSWORD
 Specify The DSL Modem Password To Make Telnet Connection.
 
-:PASSWORD_RECIVECODE
+####PASSWORD_RECIVECODE
 Specify The Code That Modem Will Send To Get Password.
 
-:TELNET_RECIEVE_CODE
+####TELNET_RECIEVE_CODE
 Specify The Code That Modem Will Send To Notify It's Ready For Receive Telnet Commands.
 
-:RUN_CODE_1
+####RUN_CODE_1
 Specify The First Telnet Command To Run On Reset Request.
 
-:RUN_CODE_2
+####RUN_CODE_2
 Specify The Second Telnet Command To Run On Reset Request.
 
-:EXIT_CODE
+####EXIT_CODE
 Specify The Second Telnet Command To Close Connection.
 
 
