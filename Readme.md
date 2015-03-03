@@ -75,4 +75,4 @@ BACK_ALIVE_RETRY_MAX=60
 <br />
 <br />
 ##Compile
-You Need Pyinstaller For Complie Script. In Windows Just Run Build build_binalry.bat
+You Need Pyinstaller For Complie Script. In Windows Just Run Build `build_binalry.bat` To Compile.
