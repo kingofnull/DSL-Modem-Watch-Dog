@@ -12,9 +12,9 @@ print(
 if not(os.path.isfile('config.ini')):
 	print('Config File \'config.ini\' Not Found.');
 	f=open('config.ini','w+')
-	f.write('[MODEM]\nMODEM_ADDRESS = "192.168.1.1"\nMODEM_USER=""\nUSER_RECIEVECODE=""\nMODEM_PASSWORD= "100604"\nPASSWORD_RECIVECODE="Password: "\nTELNET_RECIEVE_CODE="> "\nRUN_CODE_1="wan adsl close"\nRUN_CODE_2="wan adsl open"\nEXIT_CODE="exit"\n\n[CONNECTION]\nINTERNET_CHECK_TCP_SERVER="yahoo.com"\nINTERNET_CHECK_TCP_PORT=80\nINTERNET_CHECK_TIME_OUT=2\nINTERNET_CHECK_INTERVAL=10\nBACK_ALIVE_RETRY_MAX=60');
+	f.write('[MODEM]\nMODEM_ADDRESS = "192.168.1.1"\nMODEM_USER=""\nUSER_RECIEVECODE=""\nMODEM_PASSWORD= "12345"\nPASSWORD_RECIVECODE="Password: "\nTELNET_RECIEVE_CODE="> "\nRUN_CODE_1="wan adsl close"\nRUN_CODE_2="wan adsl open"\nEXIT_CODE="exit"\n\n[CONNECTION]\nINTERNET_CHECK_TCP_SERVER="yahoo.com"\nINTERNET_CHECK_TCP_PORT=80\nINTERNET_CHECK_TIME_OUT=2\nINTERNET_CHECK_INTERVAL=10\nBACK_ALIVE_RETRY_MAX=60');
 	f.close();
-	print('Config File Created With Defaulte Setting !');
+	print('Config File Created From Default Setting !');
 	
 
 config = ConfigParser.ConfigParser()
