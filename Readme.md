@@ -41,6 +41,7 @@ Specify The Second Telnet Command To Close Connection.
 Specify The Server Which Will Be Used To Check Internet Connectivity.
 <br /><br />
 ######INTERNET_CHECK_TCP_PORT
+Doesn't Used Any More! 
 Specify The Server,s Port Which Will Be Used To Check Internet Connectivity. The Port Should Be Open On TCP.
 <br /><br />
 ######INTERNET_CHECK_TIME_OUT
@@ -67,7 +68,7 @@ EXIT_CODE="exit"
 
 [CONNECTION]
 INTERNET_CHECK_TCP_SERVER="yahoo.com"
-INTERNET_CHECK_TCP_PORT=80
+INTERNET_CHECK_TCP_PORT=
 INTERNET_CHECK_TIME_OUT=2
 INTERNET_CHECK_INTERVAL=10
 BACK_ALIVE_RETRY_MAX=60

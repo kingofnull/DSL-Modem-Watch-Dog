@@ -6,6 +6,9 @@ import sys
 import ConfigParser
 import re
 import os
+import platform
+import subprocess
+
 print(
  '>>>>>>>>>>>>>>>>>>DSL Modem Watch Dog<<<<<<<<<<<<<<<<<<\n\n+++++++++++++++++ Proudly Wrote By MSS ++++++++++++++++++\n\n---------------------------------------------------------');
 
@@ -48,6 +51,21 @@ def IsInternetAvailible():
      pass
   return False
 
+  
+def Ping():
+	hostname=INTERNET_CHECK_TCP_SERVER
+	if platform.system() == "Windows":
+		command="ping "+hostname+" -n 1 -w "+str(INTERNET_CHECK_TIME_OUT*1000)
+	else:
+		command="ping -c 1 " + hostname
+	# print command	
+	proccess = subprocess.Popen(command, stdout=subprocess.PIPE)
+	matches=re.match('.*time=([0-9]+)ms.*', proccess.stdout.read(),re.DOTALL)
+	if matches:
+		return matches.group(1)
+	else: 
+		return False
+
 
 def ResetDSL():
     tn = telnetlib.Telnet(MODEM_ADDRESS)
@@ -65,9 +83,13 @@ def ResetDSL():
     tn.write(EXIT_CODE+"\n")
     return
 
+# while True:
+	# print Ping()
+	# time.sleep(1)
+	
 State=True
 while True:
-	State= (IsInternetAvailible())
+	State= (Ping())
 	if not(State) :
 		sys.stdout.flush()
 		print('\rInternet Is Not Avialible. Reset Message Is Sending. Wait For Stablizing . . .\n')
@@ -77,7 +99,7 @@ while True:
 		  print('\rFail To Run Telnet Commands!\n')
 		  
 		ii=0
-		while ii<BACK_ALIVE_RETRY_MAX and not(IsInternetAvailible()):
+		while ii<BACK_ALIVE_RETRY_MAX and not(Ping()):
 		  sys.stdout.write("\rInternet Is Not Avialible. Internet Check %dth Try" % ii)
 		  sys.stdout.flush()
 		  time.sleep(1)
