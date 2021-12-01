@@ -1,8 +1,9 @@
 ## What Is It?
-Its A Python Script Which Observes Internet Connectivity And Reset DSL Line When Internet Is Not Available.
+It is a simple python scritpt that it pings an IP address and if detected a timeout , it disconenect and reconnect DSL connectivity using modem's telenet interface.
+
 <br />
 ## Why
-DSL Modem Has Kind Of Problem Which They Some Times Can't Dial The User/Password On The Line (At Least Mine Does) This Problems Made By ISP. The Only Way To Solve It Is Reseting The DSL Line Connection Or Mainly Reset The DSL Modem.
+My DSL Modem Has Kind Of Problem Which Some Times Can't Dial The User/Password On The Line. This Problems Made By ISPs. The Only Way To Solve It Is Reseting The DSL Line Connection Or Mainly Reset The DSL Modem.
 This Script Check The Internet Connection In A Loop And If Internet Connection Is Not Available It Connect To The Modem And Run Two Commands To Reset The DSL Line. 
 <br /><br />
 All Options Are Configurable And Should Be Set In `config.ini`. The Python Script And Win32 Binary Are Available.
